@@ -1,10 +1,12 @@
 import React from "react";
+import './App.scss'
 function Bcoin({rank,name,symbol,price,change,volume}){
-    return (<div><div>{rank}</div>
-    <div><h1>{name}</h1></div>
-    <div>{symbol}</div>
-    <div>{price}</div>
-    <div>{change}</div><div>{volume}</div></div>)
+    return (<tr><td>{rank}</td>
+    <td>{name}</td>
+    <td>{symbol}</td>
+    <td>{price}</td>
+    <td>{change}</td>
+    <td>{volume}</td></tr>)
 
 }
 export default Bcoin;
