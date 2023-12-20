@@ -39,3 +39,15 @@
 #title{
     font-size: 5vmax;
 }}
+.searchbar{
+    @include center;
+    input{
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    img{
+        width: 40px;
+    }
+}

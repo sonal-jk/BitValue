@@ -3,6 +3,7 @@ import './App.scss';
 import axios from 'axios';
 import Bcoin from './Bcoin';
 import { useEffect, useState } from 'react';
+import logo from './search.png'
 //import { keys } from '@material-ui/core/styles/createBreakpoints';
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
     <strong id='title'>Bit Value</strong>
     <p className='p1'>A cryptocurrency app that provides all information about leading cryptocurrencies!</p>
     <div><p>Search what you are looking for...</p>
-    <div><input type='text' placeholder='write here...' onChange={change} /><img src='#' alt='nope' /></div></div>
+    <div className='searchbar'><input type='text' placeholder='write here...' onChange={change} /><img src={logo} alt='nope' /></div></div>
 <div className='container'>
     <div className='table'>
       <div className='thead'><div className='tr'><strong>Rank</strong>
