@@ -1,0 +1,38 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App{
+    margin-top: 50px;
+    text-align: center;
+    .p1{
+        margin: 3% 0%
+    }
+    .tab{
+        @include center;
+    }
+    table{
+      
+        margin-top: 5vmin;
+        border-spacing: 5vw 3vw;
+     
+        
+       
+    }
+}
+strong{
+    font-size: 5vmax;
+}
+tr{
+    
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+}
+td,th{
+   
+   padding: 5px;
+    text-align: center;
+    //vertical-align: middle;
+    
+}
