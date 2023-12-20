@@ -9,30 +9,33 @@
     .p1{
         margin: 3% 0%
     }
-    .tab{
-        @include center;
+    .container{
+       width: 90vw;
+        margin: 5%;
+        .table{
+           
+           width: 100%;
+                .tr{
+                   
+                    @include center;
+                    justify-content:space-between;
+                    text-align: left;
+                    border-bottom: 1px solid black;
+                    height: 70px;
+                    p,strong{
+                        width: 120%;
+                    }
+                   
+                }
+
+                .tbody,.thead{
+                    width: 100%;
+
+                }
+            
+        }
     }
-    table{
-      
-        margin-top: 5vmin;
-        border-spacing: 5vw 3vw;
-     
-        
-       
-    }
-}
-strong{
+  
+#title{
     font-size: 5vmax;
-}
-tr{
-    
-    border-radius: 20px;
-    border-bottom: 1px solid black;
-}
-td,th{
-   
-   padding: 5px;
-    text-align: center;
-    //vertical-align: middle;
-    
-}
+}}

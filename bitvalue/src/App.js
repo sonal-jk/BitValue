@@ -41,27 +41,27 @@ function App() {
   })}</>*/
 
   <div className='App' >
-    <strong>Bit Value</strong>
+    <strong id='title'>Bit Value</strong>
     <p className='p1'>A cryptocurrency app that provides all information about leading cryptocurrencies!</p>
     <div><p>Search what you are looking for...</p>
     <div><input type='text' placeholder='write here...' onChange={change} /><img src='#' alt='nope' /></div></div>
-<div className='tab'>
-    <table>
-      <thead><tr><th>Rank</th>
-      <th>Name</th>
-      <th>Symbol</th>
-      <th>Price(USD)</th>
-      <th>Change(per 24hr)</th>
-      <th>MarketCap(USD)</th>
-      <th>Volume</th></tr></thead>
-      <tbody>
+<div className='container'>
+    <div className='table'>
+      <div className='thead'><div className='tr'><strong>Rank</strong>
+      <strong><p>Name</p></strong>
+      <strong><p>Symbol</p></strong>
+      <strong><p>Price(USD)</p></strong>
+      <strong><p>Change(per 24hr)</p></strong>
+      <strong><p>MarketCap(USD)</p></strong>
+      <strong><p>Volume</p></strong></div></div>
+      <div className='tbody'>
         {filtered.map((bit,id)=>{
           //console.log(bit.name)
           return (
            <Bcoin name={bit.name} rank={bit.rank} price={bit.priceUsd} symbol={bit.symbol} volume={bit.volumeUsd24Hr} change={bit.changePercent24Hr} cap={bit.marketCapUsd} />
       )  })}
-   </tbody>
-    </table></div>
+   </div>
+   </div></div>
   </div>
 
 
