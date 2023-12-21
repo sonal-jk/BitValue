@@ -3,36 +3,98 @@
     justify-content: center;
     align-items: center;
 }
+/*@function color($n){
+    @if($n<0){
+       
+    $color:red;
+    }
+    @if($n>0){
+       $color:green;
+    }
+    @return $color;
+}*/
+body{
+    background-image: url("./comb.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-attachment: fixed;
+    
+
+
+}
 .App{
+    color: white;
     margin-top: 50px;
     text-align: center;
+    
     .p1{
         margin: 3% 0%
     }
-    .tab{
-        @include center;
+    .container{
+       width: 90vw;
+        margin: 5%;
+        .table{
+           
+           width: 100%;
+                .tr{
+                   
+                    @include center;
+                    justify-content:space-between;
+                    text-align: left;
+                   
+                    padding: 10px 20px;
+                    margin: 1%;
+                    border-radius: 15px;
+                    height: 50px;
+                    
+                    p,strong{
+                        width: 120%;
+                    }
+                   
+                }
+
+                .tbody,.thead{
+                    width: 100%;
+
+                }
+                .tbody .tr{
+                    
+              background:rgba(255,255,255,0.2);
+              backdrop-filter: blur(6px);
+              box-shadow: 0px 0px 2px 1px;
+
+         
+                   
+                }
+              
+              
+            
+        }
     }
-    table{
-      
-        margin-top: 5vmin;
-        border-spacing: 5vw 3vw;
-     
-        
-       
-    }
-}
-strong{
-    font-size: 5vmax;
-}
-tr{
-    
-    border-radius: 20px;
-    border-bottom: 1px solid black;
-}
-td,th{
    
-   padding: 5px;
-    text-align: center;
-    //vertical-align: middle;
-    
+#title{
+    font-size: 5vmax;
+    text-shadow: rgb(201, 200, 197) 1px 0 10px;;
+}}
+.searchbar{
+    @include center;
+    input{
+        height: 2vmax;
+        width: 30vmin;
+        border-radius: 20px;
+        padding: 8px;
+    }
+    img{
+        width: 2.7vmax;
+    }
+}
+@media (max-width:763px){
+    .App .container .table{
+    .tbody,.thead{
+        width: 70vmax;
+        font-size: 2vmax;
+        
+
+    }}
+
 }
