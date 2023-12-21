@@ -3,10 +3,23 @@
     justify-content: center;
     align-items: center;
 }
+/*@function color($n){
+    @if($n<0){
+       
+    $color:red;
+    }
+    @if($n>0){
+       $color:green;
+    }
+    @return $color;
+}*/
 body{
-    background{
-    image: url("./comb.jpg");
-}
+    background-image: url("./comb.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-attachment: fixed;
+    
+
 
 }
 .App{
@@ -45,9 +58,12 @@ body{
 
                 }
                 .tbody .tr{
-                    background:white;
+                    
               background:rgba(255,255,255,0.2);
-              
+              backdrop-filter: blur(6px);
+              box-shadow: 0px 0px 2px 1px;
+
+         
                    
                 }
               
@@ -58,6 +74,7 @@ body{
    
 #title{
     font-size: 5vmax;
+    text-shadow: rgb(201, 200, 197) 1px 0 10px;;
 }}
 .searchbar{
     @include center;
